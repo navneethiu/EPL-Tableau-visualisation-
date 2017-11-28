@@ -1,0 +1,2381 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.1103.1137                               -->
+<workbook original-version='10.4' source-build='10.4.1 (10400.17.1103.1137)' source-platform='win' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='all_teams_stats_sum' inline='true' name='federated.15nbx5811a8spq13sdy6r0r6rest' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='all_teams_stats_sum' name='textscan.1jkxamq1d1h7x50zqgude0icjf5v'>
+            <connection class='textscan' directory='C:/Users/Administrator/Downloads' filename='all_teams_stats_sum.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1jkxamq1d1h7x50zqgude0icjf5v' name='all_teams_stats_sum.csv' table='[all_teams_stats_sum#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='home_team' ordinal='1' />
+            <column datatype='integer' name='home_matches' ordinal='2' />
+            <column datatype='integer' name='home_points' ordinal='3' />
+            <column datatype='integer' name='home_goals' ordinal='4' />
+            <column datatype='integer' name='assists_home' ordinal='5' />
+            <column datatype='integer' name='saves_home' ordinal='6' />
+            <column datatype='integer' name='crosses_home' ordinal='7' />
+            <column datatype='integer' name='free_home' ordinal='8' />
+            <column datatype='integer' name='shots_home' ordinal='9' />
+            <column datatype='integer' name='offsides_home' ordinal='10' />
+            <column datatype='integer' name='throw_ins_home' ordinal='11' />
+            <column datatype='integer' name='penalties_home' ordinal='12' />
+            <column datatype='integer' name='handballs_home' ordinal='13' />
+            <column datatype='integer' name='corners_home' ordinal='14' />
+            <column datatype='integer' name='blocks_home' ordinal='15' />
+            <column datatype='integer' name='clearances_home' ordinal='16' />
+            <column datatype='integer' name='fouls_home' ordinal='17' />
+            <column datatype='integer' name='yellow_cards_home' ordinal='18' />
+            <column datatype='integer' name='red_cards_home' ordinal='19' />
+            <column datatype='integer' name='away_matches' ordinal='20' />
+            <column datatype='integer' name='away_points' ordinal='21' />
+            <column datatype='integer' name='away_goals' ordinal='22' />
+            <column datatype='integer' name='assists_away' ordinal='23' />
+            <column datatype='integer' name='saves_away' ordinal='24' />
+            <column datatype='integer' name='crosses_away' ordinal='25' />
+            <column datatype='integer' name='free_away' ordinal='26' />
+            <column datatype='integer' name='shots_away' ordinal='27' />
+            <column datatype='integer' name='offsides_away' ordinal='28' />
+            <column datatype='integer' name='throw_ins_away' ordinal='29' />
+            <column datatype='integer' name='penalties_away' ordinal='30' />
+            <column datatype='integer' name='handballs_away' ordinal='31' />
+            <column datatype='integer' name='corners_away' ordinal='32' />
+            <column datatype='integer' name='blocks_away' ordinal='33' />
+            <column datatype='integer' name='clearances_away' ordinal='34' />
+            <column datatype='integer' name='fouls_away' ordinal='35' />
+            <column datatype='integer' name='yellow_cards_away' ordinal='36' />
+            <column datatype='integer' name='red_cards_away' ordinal='37' />
+            <column datatype='integer' name='total_matches' ordinal='38' />
+            <column datatype='integer' name='total_points' ordinal='39' />
+            <column datatype='real' name='points_avg' ordinal='40' />
+            <column datatype='integer' name='total_goals' ordinal='41' />
+            <column datatype='integer' name='total_assists' ordinal='42' />
+            <column datatype='integer' name='total_saves' ordinal='43' />
+            <column datatype='integer' name='total_crosses' ordinal='44' />
+            <column datatype='integer' name='total_free' ordinal='45' />
+            <column datatype='integer' name='total_shots' ordinal='46' />
+            <column datatype='integer' name='total_offsides' ordinal='47' />
+            <column datatype='integer' name='total_throw_ins' ordinal='48' />
+            <column datatype='integer' name='total_penalties' ordinal='49' />
+            <column datatype='integer' name='total_handballs' ordinal='50' />
+            <column datatype='integer' name='total_corners' ordinal='51' />
+            <column datatype='integer' name='total_blocks' ordinal='52' />
+            <column datatype='integer' name='total_clearances' ordinal='53' />
+            <column datatype='integer' name='total_fouls' ordinal='54' />
+            <column datatype='integer' name='total_yellow_cards' ordinal='55' />
+            <column datatype='integer' name='total_red_cards' ordinal='56' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_team</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[home_team]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>home_team</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_matches</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[home_matches]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>home_matches</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[home_points]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>home_points</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>home_goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[home_goals]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>home_goals</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assists_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[assists_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>assists_home</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>saves_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[saves_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>saves_home</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crosses_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[crosses_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>crosses_home</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[free_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>free_home</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shots_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shots_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>shots_home</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offsides_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[offsides_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>offsides_home</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>throw_ins_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[throw_ins_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>throw_ins_home</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penalties_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[penalties_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>penalties_home</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>handballs_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[handballs_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>handballs_home</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>corners_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[corners_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>corners_home</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blocks_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[blocks_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>blocks_home</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clearances_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clearances_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>clearances_home</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fouls_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fouls_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>fouls_home</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yellow_cards_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yellow_cards_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>yellow_cards_home</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>red_cards_home</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[red_cards_home]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>red_cards_home</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_matches</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[away_matches]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>away_matches</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[away_points]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>away_points</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>away_goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[away_goals]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>away_goals</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>assists_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[assists_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>assists_away</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>saves_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[saves_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>saves_away</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crosses_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[crosses_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>crosses_away</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>free_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[free_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>free_away</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>shots_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[shots_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>shots_away</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offsides_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[offsides_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>offsides_away</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>throw_ins_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[throw_ins_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>throw_ins_away</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>penalties_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[penalties_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>penalties_away</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>handballs_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[handballs_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>handballs_away</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>corners_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[corners_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>corners_away</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>blocks_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[blocks_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>blocks_away</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clearances_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[clearances_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>clearances_away</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fouls_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[fouls_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>fouls_away</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yellow_cards_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[yellow_cards_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>yellow_cards_away</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>red_cards_away</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[red_cards_away]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>red_cards_away</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_matches</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_matches]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_matches</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_points</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_points]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_points</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>points_avg</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[points_avg]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>points_avg</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_goals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_goals]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_goals</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_assists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_assists]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_assists</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_saves</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_saves]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_saves</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_crosses</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_crosses]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_crosses</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_free</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_free]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_free</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_shots</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_shots]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_shots</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_offsides</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_offsides]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_offsides</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_throw_ins</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_throw_ins]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_throw_ins</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_penalties</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_penalties]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_penalties</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_handballs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_handballs]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_handballs</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_corners</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_corners]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_corners</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_blocks</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_blocks]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_blocks</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_clearances</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_clearances]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_clearances</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_fouls</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_fouls]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_fouls</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_yellow_cards</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_yellow_cards]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_yellow_cards</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_red_cards</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_red_cards]</local-name>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias>total_red_cards</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[all_teams_stats_sum.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;Rs&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]&quot;' value='Average Yellow cards per match' />
+          <alias key='&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435663874:qk]&quot;' value='Average Red cards per match' />
+          <alias key='&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437482501:qk]&quot;' value='Average clearance per match ' />
+          <alias key='&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]&quot;' value='Average blocks per match' />
+        </aliases>
+      </column>
+      <column caption='Total Set pieces ' datatype='integer' name='[Calculation_376050574378987520]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[total_corners]+[total_free]+[total_penalties]' />
+      </column>
+      <column caption='Average_yellow_per_match' datatype='real' name='[Calculation_376050574435389441]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[total_yellow_cards]/[total_matches]' />
+      </column>
+      <column caption='Avg_red_per_match' datatype='real' name='[Calculation_376050574435663874]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[total_red_cards]/[total_matches]' />
+      </column>
+      <column caption='Avg_fouls_per_match ' datatype='real' name='[Calculation_376050574436245507]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[total_fouls]/[total_matches]' />
+      </column>
+      <column caption='Avg_clearance_per_match ' datatype='real' name='[Calculation_376050574437482501]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[total_clearances]/[total_matches]' />
+      </column>
+      <column caption='Avg_blocks_per_match ' datatype='real' name='[Calculation_376050574437601286]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[total_blocks]/[total_matches]' />
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Assists Away' datatype='integer' name='[assists_away]' role='measure' type='quantitative' />
+      <column caption='Assists Home' datatype='integer' name='[assists_home]' role='measure' type='quantitative' />
+      <column caption='Away Goals' datatype='integer' name='[away_goals]' role='measure' type='quantitative' />
+      <column caption='Away Matches' datatype='integer' name='[away_matches]' role='measure' type='quantitative' />
+      <column caption='Away Points' datatype='integer' name='[away_points]' role='measure' type='quantitative' />
+      <column caption='Blocks Away' datatype='integer' name='[blocks_away]' role='measure' type='quantitative' />
+      <column caption='Blocks Home' datatype='integer' name='[blocks_home]' role='measure' type='quantitative' />
+      <column caption='Clearances Away' datatype='integer' name='[clearances_away]' role='measure' type='quantitative' />
+      <column caption='Clearances Home' datatype='integer' name='[clearances_home]' role='measure' type='quantitative' />
+      <column caption='Corners Away' datatype='integer' name='[corners_away]' role='measure' type='quantitative' />
+      <column caption='Corners Home' datatype='integer' name='[corners_home]' role='measure' type='quantitative' />
+      <column caption='Crosses Away' datatype='integer' name='[crosses_away]' role='measure' type='quantitative' />
+      <column caption='Crosses Home' datatype='integer' name='[crosses_home]' role='measure' type='quantitative' />
+      <column caption='Fouls Away' datatype='integer' name='[fouls_away]' role='measure' type='quantitative' />
+      <column caption='Fouls Home' datatype='integer' name='[fouls_home]' role='measure' type='quantitative' />
+      <column caption='Free Away' datatype='integer' name='[free_away]' role='measure' type='quantitative' />
+      <column caption='Free Home' datatype='integer' name='[free_home]' role='measure' type='quantitative' />
+      <column caption='Handballs Away' datatype='integer' name='[handballs_away]' role='measure' type='quantitative' />
+      <column caption='Handballs Home' datatype='integer' name='[handballs_home]' role='measure' type='quantitative' />
+      <column caption='Home Goals' datatype='integer' name='[home_goals]' role='measure' type='quantitative' />
+      <column caption='Home Matches' datatype='integer' name='[home_matches]' role='measure' type='quantitative' />
+      <column caption='Home Points' datatype='integer' name='[home_points]' role='measure' type='quantitative' />
+      <column caption='Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+      <column caption='Offsides Away' datatype='integer' name='[offsides_away]' role='measure' type='quantitative' />
+      <column caption='Offsides Home' datatype='integer' name='[offsides_home]' role='measure' type='quantitative' />
+      <column caption='Penalties Away' datatype='integer' name='[penalties_away]' role='measure' type='quantitative' />
+      <column caption='Penalties Home' datatype='integer' name='[penalties_home]' role='measure' type='quantitative' />
+      <column caption='Points Avg' datatype='real' name='[points_avg]' role='measure' type='quantitative' />
+      <column caption='Red Cards Away' datatype='integer' name='[red_cards_away]' role='measure' type='quantitative' />
+      <column caption='Red Cards Home' datatype='integer' name='[red_cards_home]' role='measure' type='quantitative' />
+      <column caption='Saves Away' datatype='integer' name='[saves_away]' role='measure' type='quantitative' />
+      <column caption='Saves Home' datatype='integer' name='[saves_home]' role='measure' type='quantitative' />
+      <column caption='Shots Away' datatype='integer' name='[shots_away]' role='measure' type='quantitative' />
+      <column caption='Shots Home' datatype='integer' name='[shots_home]' role='measure' type='quantitative' />
+      <column caption='Throw Ins Away' datatype='integer' name='[throw_ins_away]' role='measure' type='quantitative' />
+      <column caption='Throw Ins Home' datatype='integer' name='[throw_ins_home]' role='measure' type='quantitative' />
+      <column caption='Total Assists' datatype='integer' name='[total_assists]' role='measure' type='quantitative' />
+      <column caption='Total Blocks' datatype='integer' name='[total_blocks]' role='measure' type='quantitative' />
+      <column caption='Total Clearances' datatype='integer' name='[total_clearances]' role='measure' type='quantitative' />
+      <column caption='Total Corners' datatype='integer' name='[total_corners]' role='measure' type='quantitative' />
+      <column caption='Total Crosses' datatype='integer' name='[total_crosses]' role='measure' type='quantitative' />
+      <column caption='Total Fouls' datatype='integer' name='[total_fouls]' role='measure' type='quantitative' />
+      <column caption='Total Free' datatype='integer' name='[total_free]' role='measure' type='quantitative' />
+      <column caption='Total Goals' datatype='integer' name='[total_goals]' role='measure' type='quantitative' />
+      <column caption='Total Handballs' datatype='integer' name='[total_handballs]' role='measure' type='quantitative' />
+      <column caption='Total Matches' datatype='integer' name='[total_matches]' role='measure' type='quantitative' />
+      <column caption='Total Offsides' datatype='integer' name='[total_offsides]' role='measure' type='quantitative' />
+      <column caption='Total Penalties' datatype='integer' name='[total_penalties]' role='measure' type='quantitative' />
+      <column caption='Total Points' datatype='integer' name='[total_points]' role='measure' type='quantitative' />
+      <column caption='Total Red Cards' datatype='integer' name='[total_red_cards]' role='measure' type='quantitative' />
+      <column caption='Total Saves' datatype='integer' name='[total_saves]' role='measure' type='quantitative' />
+      <column caption='Total Shots' datatype='integer' name='[total_shots]' role='measure' type='quantitative' />
+      <column caption='Total Throw Ins' datatype='integer' name='[total_throw_ins]' role='measure' type='quantitative' />
+      <column caption='Total Yellow Cards' datatype='integer' name='[total_yellow_cards]' role='measure' type='quantitative' />
+      <column caption='Yellow Cards Away' datatype='integer' name='[yellow_cards_away]' role='measure' type='quantitative' />
+      <column caption='Yellow Cards Home' datatype='integer' name='[yellow_cards_home]' role='measure' type='quantitative' />
+      <column-instance column='[total_goals]' derivation='Attribute' name='[attr:total_goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_376050574378987520]' derivation='Avg' name='[avg:Calculation_376050574378987520:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_goals]' derivation='Avg' name='[avg:total_goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_red_cards]' derivation='Avg' name='[avg:total_red_cards:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_yellow_cards]' derivation='Avg' name='[avg:total_yellow_cards:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[home_team]' derivation='None' name='[none:home_team:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_376050574378987520]' derivation='Sum' name='[sum:Calculation_376050574378987520:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_376050574435389441]' derivation='Sum' name='[sum:Calculation_376050574435389441:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_376050574435663874]' derivation='Sum' name='[sum:Calculation_376050574435663874:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_376050574436245507]' derivation='Sum' name='[sum:Calculation_376050574436245507:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_376050574437482501]' derivation='Sum' name='[sum:Calculation_376050574437482501:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_376050574437601286]' derivation='Sum' name='[sum:Calculation_376050574437601286:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_blocks]' derivation='Sum' name='[sum:total_blocks:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_clearances]' derivation='Sum' name='[sum:total_clearances:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_goals]' derivation='Sum' name='[sum:total_goals:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_red_cards]' derivation='Sum' name='[sum:total_red_cards:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[total_yellow_cards]' derivation='Sum' name='[sum:total_yellow_cards:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.0693069' measure-ordering='alphabetic' measure-percentage='0.930693' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:home_team:nk]&#10;[:Measure Names]' type='palette'>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Arsenal&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Cardiff&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;Norwich&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_blue_10_0'>
+              <bucket>&quot;West Ham&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Blackburn&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Stoke&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_brown_10_0'>
+              <bucket>&quot;Watford&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Blackpool&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Chelsea&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;Fulham&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gold_10_0'>
+              <bucket>&quot;QPR&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Burnley&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Man City&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_gray_10_0'>
+              <bucket>&quot;Southampton&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Reading&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Spurs&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;West Brom&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_green_10_0'>
+              <bucket>&quot;Wolves&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Crystal Palace&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Everton&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Middlesbrough&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_orange_10_0'>
+              <bucket>&quot;Newcastle&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Aston Villa&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Hull&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_pink_10_0'>
+              <bucket>&quot;Portsmouth&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Bolton&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Bournemouth&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_purple_10_0'>
+              <bucket>&quot;Sunderland&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Birmingham&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Man Utd&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_red_10_0'>
+              <bucket>&quot;Wigan&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Leicester&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Liverpool&quot;</bucket>
+            </map-pri>
+            <map-pri to='multiordinal_teal_10_0'>
+              <bucket>&quot;Swansea&quot;</bucket>
+            </map-pri>
+          </encoding>
+          <encoding attr='shape' field='[none:home_team:nk]' type='shape'>
+            <map to='asterisk'>
+              <bucket>&quot;Blackpool&quot;</bucket>
+            </map>
+            <map to='asterisk'>
+              <bucket>&quot;Leicester&quot;</bucket>
+            </map>
+            <map to='asterisk'>
+              <bucket>&quot;Liverpool&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;Crystal Palace&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;Man City&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;Norwich&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;West Brom&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;Bolton&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;Southampton&quot;</bucket>
+            </map>
+            <map to='diamond'>
+              <bucket>&quot;Spurs&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;Aston Villa&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;Burnley&quot;</bucket>
+            </map>
+            <map to='down-triangle'>
+              <bucket>&quot;Watford&quot;</bucket>
+            </map>
+            <map to='left-triangle'>
+              <bucket>&quot;Cardiff&quot;</bucket>
+            </map>
+            <map to='left-triangle'>
+              <bucket>&quot;Middlesbrough&quot;</bucket>
+            </map>
+            <map to='left-triangle'>
+              <bucket>&quot;Sunderland&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;Birmingham&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;Man Utd&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;QPR&quot;</bucket>
+            </map>
+            <map to='plus'>
+              <bucket>&quot;Wigan&quot;</bucket>
+            </map>
+            <map to='right-triangle'>
+              <bucket>&quot;Fulham&quot;</bucket>
+            </map>
+            <map to='right-triangle'>
+              <bucket>&quot;Newcastle&quot;</bucket>
+            </map>
+            <map to='right-triangle'>
+              <bucket>&quot;Stoke&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Chelsea&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Hull&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;Portsmouth&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;West Ham&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;Arsenal&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;Blackburn&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;Reading&quot;</bucket>
+            </map>
+            <map to='times'>
+              <bucket>&quot;Wolves&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;Bournemouth&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;Everton&quot;</bucket>
+            </map>
+            <map to='triangle'>
+              <bucket>&quot;Swansea&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[attr:total_goals:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[avg:total_goals:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_goals:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437482501:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[avg:total_yellow_cards:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_clearances:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_yellow_cards:qk]&quot;</bucket>
+            </map>
+            <map to='#e03531'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435663874:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[avg:total_red_cards:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_blocks:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_red_cards:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[avg:Calculation_376050574378987520:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574378987520:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574436245507:qk]&quot;</bucket>
+            </map>
+            <map to='#ffda66'>
+              <bucket>&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:home_team:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Cardiff&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Swansea&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Arsenal&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Norwich&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Blackpool&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Southampton&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Fulham&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Wigan&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Chelsea&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Watford&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Bolton&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Spurs&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Middlesbrough&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Aston Villa&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Portsmouth&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Man City&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Bournemouth&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Stoke&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hull&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Wolves&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Leicester&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Man Utd&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Newcastle&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Crystal Palace&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;West Brom&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Burnley&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Sunderland&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Birmingham&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;QPR&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Liverpool&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Everton&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;West Ham&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Blackburn&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Reading&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='home_team' />
+        <field-sort-custom-order field='home_matches' />
+        <field-sort-custom-order field='home_points' />
+        <field-sort-custom-order field='home_goals' />
+        <field-sort-custom-order field='assists_home' />
+        <field-sort-custom-order field='saves_home' />
+        <field-sort-custom-order field='crosses_home' />
+        <field-sort-custom-order field='free_home' />
+        <field-sort-custom-order field='shots_home' />
+        <field-sort-custom-order field='offsides_home' />
+        <field-sort-custom-order field='throw_ins_home' />
+        <field-sort-custom-order field='penalties_home' />
+        <field-sort-custom-order field='handballs_home' />
+        <field-sort-custom-order field='corners_home' />
+        <field-sort-custom-order field='blocks_home' />
+        <field-sort-custom-order field='clearances_home' />
+        <field-sort-custom-order field='fouls_home' />
+        <field-sort-custom-order field='yellow_cards_home' />
+        <field-sort-custom-order field='red_cards_home' />
+        <field-sort-custom-order field='away_matches' />
+        <field-sort-custom-order field='away_points' />
+        <field-sort-custom-order field='away_goals' />
+        <field-sort-custom-order field='assists_away' />
+        <field-sort-custom-order field='saves_away' />
+        <field-sort-custom-order field='crosses_away' />
+        <field-sort-custom-order field='free_away' />
+        <field-sort-custom-order field='shots_away' />
+        <field-sort-custom-order field='offsides_away' />
+        <field-sort-custom-order field='throw_ins_away' />
+        <field-sort-custom-order field='penalties_away' />
+        <field-sort-custom-order field='handballs_away' />
+        <field-sort-custom-order field='corners_away' />
+        <field-sort-custom-order field='blocks_away' />
+        <field-sort-custom-order field='clearances_away' />
+        <field-sort-custom-order field='fouls_away' />
+        <field-sort-custom-order field='yellow_cards_away' />
+        <field-sort-custom-order field='red_cards_away' />
+        <field-sort-custom-order field='total_matches' />
+        <field-sort-custom-order field='total_points' />
+        <field-sort-custom-order field='points_avg' />
+        <field-sort-custom-order field='total_goals' />
+        <field-sort-custom-order field='total_assists' />
+        <field-sort-custom-order field='total_saves' />
+        <field-sort-custom-order field='total_crosses' />
+        <field-sort-custom-order field='total_free' />
+        <field-sort-custom-order field='total_shots' />
+        <field-sort-custom-order field='total_offsides' />
+        <field-sort-custom-order field='total_throw_ins' />
+        <field-sort-custom-order field='total_penalties' />
+        <field-sort-custom-order field='total_handballs' />
+        <field-sort-custom-order field='total_corners' />
+        <field-sort-custom-order field='Calculation_376050574378987520' />
+        <field-sort-custom-order field='total_blocks' />
+        <field-sort-custom-order field='total_clearances' />
+        <field-sort-custom-order field='total_fouls' />
+        <field-sort-custom-order field='total_yellow_cards' />
+        <field-sort-custom-order field='total_red_cards' />
+      </field-sort-info>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Set-Pieces' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Measure Names' />
+        <param name='target' value='Set-Pieces' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='DEFENCE PLAYSTYLE'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_teams_stats_sum' name='federated.15nbx5811a8spq13sdy6r0r6rest' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15nbx5811a8spq13sdy6r0r6rest'>
+            <column caption='Average_yellow_per_match' datatype='real' name='[Calculation_376050574435389441]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[total_yellow_cards]/[total_matches]' />
+            </column>
+            <column caption='Avg_red_per_match' datatype='real' name='[Calculation_376050574435663874]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[total_red_cards]/[total_matches]' />
+            </column>
+            <column caption='Avg_clearance_per_match ' datatype='real' name='[Calculation_376050574437482501]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[total_clearances]/[total_matches]' />
+            </column>
+            <column caption='Avg_blocks_per_match ' datatype='real' name='[Calculation_376050574437601286]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[total_blocks]/[total_matches]' />
+            </column>
+            <column caption='Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+            <column-instance column='[home_team]' derivation='None' name='[none:home_team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_376050574435389441]' derivation='Sum' name='[sum:Calculation_376050574435389441:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_376050574435663874]' derivation='Sum' name='[sum:Calculation_376050574435663874:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_376050574437482501]' derivation='Sum' name='[sum:Calculation_376050574437482501:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_376050574437601286]' derivation='Sum' name='[sum:Calculation_376050574437601286:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Blocks' datatype='integer' name='[total_blocks]' role='measure' type='quantitative' />
+            <column caption='Total Clearances' datatype='integer' name='[total_clearances]' role='measure' type='quantitative' />
+            <column caption='Total Matches' datatype='integer' name='[total_matches]' role='measure' type='quantitative' />
+            <column caption='Total Red Cards' datatype='integer' name='[total_red_cards]' role='measure' type='quantitative' />
+            <column caption='Total Yellow Cards' datatype='integer' name='[total_yellow_cards]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_yellow_cards])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:home_team:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435663874:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437482501:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]' scope='rows' value='Average blocks per match' />
+            <format attr='subtitle' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]' scope='rows' value='Average Yellow cards per match' />
+            <format attr='subtitle' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435663874:qk]' scope='rows' value='Average Red cards per match' />
+            <format attr='subtitle' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435663874:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435663874:qk]' scope='rows' value='true' />
+            <format attr='title' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437482501:qk]' scope='rows' value='Average clearance per match ' />
+            <format attr='subtitle' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437482501:qk]' scope='rows' value='' />
+            <format attr='auto-subtitle' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437482501:qk]' scope='rows' value='true' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]' value='105' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435663874:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437482501:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.60000002384185791' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk] + ([federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435663874:qk] + ([federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk] + [federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437482501:qk])))</rows>
+        <cols>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Average_yellow_per_match: </run>
+              <run bold='true'>&lt;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.52381'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;Aston Villa&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='0.95015870962740945'>
+                  <node-reference>
+                    <axis>[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='0' y='46' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Average_yellow_per_match: </run>
+              <run bold='true'>&lt;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.47619'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;Newcastle&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='1.8098261135760179'>
+                  <node-reference>
+                    <axis>[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574435389441:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='0' y='175' />
+          </annotation>
+          <annotation class='point' id='2' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Avg_blocks_per_match : </run>
+              <run bold='true'>&lt;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.514286'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;Aston Villa&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='4.0366173603317579'>
+                  <node-reference>
+                    <axis>[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='1' y='167' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='0' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Avg_blocks_per_match : </run>
+              <run bold='true'>&lt;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='axis'>
+                <x-coord cell-offset='0.495238'>
+                  <node-reference>
+                    <fields>
+                      <field>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</field>
+                    </fields>
+                    <multibucket>
+                      <bucket>&quot;Newcastle&quot;</bucket>
+                    </multibucket>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='3.2205503127556625'>
+                  <node-reference>
+                    <axis>[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574437601286:qk]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+              </visual-coordinate>
+            </point>
+            <body x='1' y='109' />
+          </annotation>
+        </annotations>
+      </table>
+    </worksheet>
+    <worksheet name='Set-Pieces'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Set piece Vs Total Goals </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_teams_stats_sum' name='federated.15nbx5811a8spq13sdy6r0r6rest' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15nbx5811a8spq13sdy6r0r6rest'>
+            <column caption='Total Set pieces ' datatype='integer' name='[Calculation_376050574378987520]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[total_corners]+[total_free]+[total_penalties]' />
+            </column>
+            <column caption='Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+            <column-instance column='[home_team]' derivation='None' name='[none:home_team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_376050574378987520]' derivation='Sum' name='[sum:Calculation_376050574378987520:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_goals]' derivation='Sum' name='[sum:total_goals:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Corners' datatype='integer' name='[total_corners]' role='measure' type='quantitative' />
+            <column caption='Total Free' datatype='integer' name='[total_free]' role='measure' type='quantitative' />
+            <column caption='Total Goals' datatype='integer' name='[total_goals]' role='measure' type='quantitative' />
+            <column caption='Total Penalties' datatype='integer' name='[total_penalties]' role='measure' type='quantitative' />
+            <column caption='Total Points' datatype='integer' name='[total_points]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]'>
+            <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574378987520:qk]&quot;' user:op='manual' />
+          </filter>
+          <filter class='categorical' column='[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([total_points])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:home_team:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <sort class='computed' column='[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]' direction='DESC' using='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_goals:qk]' />
+          <slices>
+            <column>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</column>
+            <column>[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_goals:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574378987520:qk]' scope='rows' value='false' />
+            <format attr='display' class='0' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_goals:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]' value='115' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574378987520:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_goals:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574378987520:qk] + [federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_goals:qk])</rows>
+        <cols>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Set-Pieces 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Set piece Vs Total Goals </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='all_teams_stats_sum' name='federated.15nbx5811a8spq13sdy6r0r6rest' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15nbx5811a8spq13sdy6r0r6rest'>
+            <column caption='Total Set pieces ' datatype='integer' name='[Calculation_376050574378987520]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[total_corners]+[total_free]+[total_penalties]' />
+            </column>
+            <column caption='Team' datatype='string' name='[home_team]' role='dimension' type='nominal' />
+            <column-instance column='[home_team]' derivation='None' name='[none:home_team:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_376050574378987520]' derivation='Sum' name='[sum:Calculation_376050574378987520:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_goals]' derivation='Sum' name='[sum:total_goals:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Corners' datatype='integer' name='[total_corners]' role='measure' type='quantitative' />
+            <column caption='Total Free' datatype='integer' name='[total_free]' role='measure' type='quantitative' />
+            <column caption='Total Goals' datatype='integer' name='[total_goals]' role='measure' type='quantitative' />
+            <column caption='Total Penalties' datatype='integer' name='[total_penalties]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1101' />
+                <format attr='maxwidth' value='1101' />
+                <format attr='minheight' value='619' />
+                <format attr='maxheight' value='619' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:Calculation_376050574378987520:qk]</rows>
+        <cols>[federated.15nbx5811a8spq13sdy6r0r6rest].[sum:total_goals:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows pres-mode='true' source-height='30'>
+    <window class='worksheet' name='DEFENCE PLAYSTYLE'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='227'>
+            <card pane-specification-id='3' param='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]</field>
+            <field>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' maximized='true' name='Set-Pieces 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.15nbx5811a8spq13sdy6r0r6rest].[none:home_team:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Set-Pieces'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='5' param='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight field='[federated.15nbx5811a8spq13sdy6r0r6rest].[:Measure Names]'>
+          <bucket-selection />
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='DEFENCE PLAYSTYLE' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Set-Pieces' width='192'>
+      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
+      qNHv+/4xL3yk1UcPtbK2ruJu9elfd+rKlaqH/7NjruFI7boWl9dVrxS0srb13OHdnR21glCl
+      YlGNRkOSVK8U1ewcb/5xn/y7O5vKFY53187l88f6uCdrOEqxVJSiUJXqi71qyOdzpzL/qUgb
+      q4/08dLKC63jWcmjP+SpdqetfK6oVLugMT+pP/9rUTdeuabN7Zzmbr6mcq6kW7c+p+3MplYf
+      rmp8Jq2R0Qn5flIzk+P/8yKfFbQaClOjmrt8Qf/45380OTOjney6pmbSCvykHtzb0SvzaS0s
+      Ptar12e1uLqtr79xW0n/lD6rBk1lcztKeTXV60n9+29/0fmL86oUNjSRntNAq6rk+HkVcxkt
+      b+R0fX5WmUxWt778NQ2ezgokSTulhsKornqho7aX0PZ2WS9dPqdHjwu6eum8diodzV5IaWmr
+      pvTEiKanpk5tdqVc0cS5MRV3sqrWJhTUS3q0sqorsy+rFQaK6lUlRs5Jzaq84TGFtbISoxfk
+      BQ1NTU2f2jokqV6rKTU6peXFBe22PKUvjCvypFZ1V5HvazPf0Bu3Xzv0G7xe8F7jaTDRkVKj
+      apQKqlV3ldup6Pq1l9VohRpKSnfvLahYrmh6akr+4Lg2lx9oeGTkFB7qpwtOJlXOZbS6vqXL
+      V68pGTZVKJUUhKHk+aoUtrSRyarVCrSdz6lY3FH7lL+z6tLkiLZ2O0qopUKpovz2ltKzc/LD
+      psZGU7r30YdqJcd1fnRQ1Ur11G/pUaepbCajTDavTmJYs+lJlbbXtZ7dUafdUZQaVnrynPL5
+      /At99j+ucnFbn6xuqBEklF35WIEiVWpNNepNXZ2/qnq9rmazrmqtoWplV9VaU9UTvsc8TGpw
+      UNmtrGq1mprNlnKZNS0tr8lLDevS9KQKmU01wsOv/38B6A781ThgAOsAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Set-Pieces 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAUSklEQVR4nO3dWXMc13nG8X9v0zMDDHZiIVaSACFQBElJFh1rsSRLUVleZMeVxalKJXYu
+      kpQvnMpXyH0+QHKT2ySVpBzHJSeWbSmWIlmOuYikSAIkiB2DdQazYZZeTi4o0JTKgD3gTGPp
+      93eloki85wDzoKfPnLePppRSCBFS+n4PQIj9VNcA+L5PkBcY3/cDq6WUOtJzC7JekLU+Xc+s
+      /p8r8plNsOIYqoKLRUPUIJ0p0NbaRCa9SbypBVO/X0jTNDRNq+Hwd+a6Lqa5hyntwfY3UdeD
+      uYgGObegAxDk3D5dr+qq5VyKqflVBgb6mL53l7IyaG8wqXiK1MYqpYqPuZFj9FQ/Sik0TQv0
+      N2VQtY7y3Paj3n7NreoAbBULFHM55hbmaGhsJ+6XcXSNE72d3L79ET2jT7OZnEbXdZRS6Loe
+      2BXA930MwwikFoCmaYFdAYKc2/bbu6DqBf1ze7he1T+95pYO4jEL207glVNkK4r2BourNyfp
+      PTHK3M1LRBrbaj5oIepBq+cyqOd5gV4BHMfBsqxAanmeF+gVIMi5KaXwPC+w9+VBzu3T9WQZ
+      VISaBECEmgRAhJoEQISaBECEmgRAhJoEQISaBECEmgRAhJoEQIRa1Z91+55HuVIhYts45TK6
+      aWFoCk9pWIZGxfGIRCIEtPtBiEdSdQDWFu6wmPEZGWzj6o0lhk+fYG3+DiXXor3VJr1ZYHD0
+      cY41xesxXiFqquoAGJaNV14jV2gmElFksjkaWjroVB7Lvs650WMkS2W8BhvP8wJtrPA8L7Ba
+      23sIg9roF+TcINhuvqDn9nC9qgOgaSY6CsfXiJoaSoFT2GTBs+ltt7l8a4ax8fO/2m8d4G5Q
+      4MjuBoXg5hb0blAIbm6frifbofdItkPXjmyHFmKfSABEqEkARKhJAESoSQBEqEkARKhJAESo
+      SQBEqEkARKhJAESoSQBEqEkARKhVHYBiLsWVy5fJFMrcvf0Rma0KqeV5ZhZXqWxluDVxF8+X
+      U5fE4VD1btDkzARacx+x0ga5SDPZlSSaDrbvs6Vr9DQ3UrSa6W1PBL4bNMiDFoLeDRr0ARlB
+      7gY9VAdkxBPNLM7foliJ0D/aga6BbhhYGnjo2BGTgu8/aKgI+qidoJortp+hH1TTSJBzg1+F
+      IAhBz+3hetXHTikqvsXI2Cnm7k5wrH8EN5Mk58c51WZzZ36dM2fGMIz7vxmDvAIopY7sFSDI
+      uT04PSXAekFeAR6uJw0xeyQNMbUjDTFC7BMJgAg1CYAINQmACDUJgAg1CYAINQmACDUJgAg1
+      CYAINQmACDUJgAg1CYAItap3Oymvwk/eepuLT5/nl5emGB4bYXNxirwboacjSnIlw+i5C7Qn
+      YvUYrxA1VXUAlmZnaOvswil6xBojlEsVGtu76FIuSV/n6fERloolWuIROSCjhuSAjPrUqzoA
+      VtSmlFxms7GVuKVTrlTQiuusuTbH221+eXOKx8YvyAEZdXBUt0ODHJBRE9IPUBth6AcwgdL1
+      63ITLMIp82//jpfJSgBEOLkrKzS+9KIEQIST1ddH9o03JAAinJq+/jUiJ05KAEQ4aYZBdOwx
+      CYAINwmACDUJgAg1CYAINQmACDUJgAg1CYAItT3sdlLcvHGNoZOnmLx1m47+YbzMElnPZqA9
+      yuTcGmfHx4lFjNqPVogaq3o3aD6V5MZ0kp5EE419/azPTWNYFjHfZU3pjB5rYtWJ0Nfe9GDH
+      ZFA8z3uwDbve9qMfIKi5wf1+gKB2ugY9t4frVd8Qs7RMbmOFuGbgZbK4SsMrlfAURCyddK6A
+      1RiXfoA6OKrboWH/+gGqnuHps08wcGoLM2KTnJum+9Qwbm6dgm9zrMliLplmqDVR8wELUQ/S
+      ELNH0hBTO3JAhhD7RAIgQk0CIEJNAiBCTQIgQk0CIEJNAiBCTQIgDjSlFOVSCddx6vL1g/us
+      W4gqKaW48sv/Y/ruXZRSvPjK79LR2VnTGnIFEAdWuVRiZmqKb3zzj3n5i6/xi/ffq3kNCYA4
+      sAzDwPd9spkMayvLNDY21rxG1W+BSoUMS2sZBvqPszQzS7S1g7jusOVbtDVaJFcz9Pb2oAe3
+      AVQcUVYkwvNf+ALvvPVTGhMJnnn+8zWvUfVmuK18lvTKPBUzSsGJM9zXxtTdSTRfQ7MN4qZJ
+      pK2HntZG2QxXQ7IZrj71qj8fwNRJZ0u0dnewmVpk8l6eeCxOXHms+Don25tYrjh4nicHZNSQ
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
